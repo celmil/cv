@@ -1,0 +1,161 @@
+/*importing fonts*/
+@font-face {
+    font-family: 'Zen';
+    src: url(../fonts/ZenLoop-Regular.ttf);
+}
+@font-face {
+    font-family: 'News';
+    src: url(../fonts/NewsCycle-Regular.ttf);
+}
+/*add background, and a color which makes the text readable even if the image can not be loaded*/
+html{
+    font-size: 100%;
+    background: url(../images/background1-trans2.png),  #e5f4fa;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+/*text font and size*/
+body{
+    max-width: 100%;
+    font-family: 'News', sans-serif;
+    color: #0c2b44;
+}
+/*makes the content less wide for improved readability and better styling
+Adds a transparent background for readability over the background image*/
+main{
+    width: 80%;
+    max-width: 1500px;
+    margin:0 auto;
+    padding: 10px;
+    background: rgba(229, 244, 250, 0.85);
+}
+
+/*ensures footer is put last on the page by clearing any potential 
+floats after the main*/
+main::after, #skepp::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*header styling*/
+h1,h2,h3{
+    font-family: 'Zen', sans-serif;
+    color: #0c2b44;
+}
+h1{ 
+    margin-top: 25px;
+    margin-left: 20%;
+    letter-spacing: 0.3rem;
+    font-size: 4rem;
+    text-shadow: 2px 2px 8px rgb(229, 244, 250);
+}
+h2{
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+}
+h3{
+    letter-spacing: 0.15rem;
+    font-size: 1.8rem;
+}
+
+/*text styling*/
+p{
+    font-size: 120%;
+    line-height: 1.75rem;
+    padding: 10px;
+}
+
+/*navigation bar styling*/
+nav{
+    background: rgba(229, 244, 250, 0.7);
+    list-style: none;
+    margin:30px 0px;
+    padding:0;
+    text-align: center;
+}
+nav li{
+    display:inline;
+}
+nav a{
+    display: inline-block;
+    padding: 20px 1.5rem;
+    color: #1E5359;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a:focus, nav a:hover, nav a:active{
+    background-color: #f5d2b0;
+}
+
+/*split index, contact and memberInfo into columns*/
+#info, #leftColumn, #contactForm{
+    float: left;
+    width: 48%;
+}
+#news, #boardInfo, #contactDetails{
+    float: right;
+    width: 48%;
+}
+
+/*floats images in text*/
+#info > img, #news > img, #history > figure, #badplats > figure, #skepp > img, #confirmImage, #englishImage, #guestImage{
+    float: right;
+    margin: 5px;
+}
+
+/*downsizes images where necessary*/
+#info > img, #news > img{
+    max-width: 10rem;
+    height: auto;
+    margin: 5px;
+}
+
+/*styling for the contact page*/
+#contactDetails > p{
+    padding: 5px;
+    font-weight: bolder;
+}
+#contactForm{
+    border: #79a;
+    border-style: hidden dotted hidden hidden;
+}
+#contactForm  p{
+    margin: 5px;
+}
+input, #desc{
+    margin: 5px 5px 10px 5px;
+}
+input[type=Submit]{
+    margin: 10px;
+    padding: 12px;
+    font-weight: bolder;
+    color: #1E5359;
+    cursor: pointer;  
+}
+
+/*table of names in history and memberInfo*/
+#names th{
+    padding: 4px;
+}
+#names td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+#contactInfo td, #boardInfo td{
+    border: 1px solid #aaa;
+    text-align: left;
+    padding: 2px;
+}
+#names  tr:nth-child(even), #contactInfo tr:nth-child(even), #boardInfo tr:nth-child(even){
+    background-color: #cde;
+  }
+
+/*footer styling*/
+footer{
+    width: 80%;
+    margin:0 auto;
+    text-shadow: 2px 2px 8px rgb(229, 244, 250);
+}

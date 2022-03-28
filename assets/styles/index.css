@@ -10,7 +10,7 @@
 /*add background, and a color which makes the text readable even if the image can not be loaded*/
 html{
     font-size: 100%;
-    background: url(../images/background1-trans2.png),  #e5f4fa;
+    background:   #d6c09e;
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
@@ -18,7 +18,7 @@ html{
 body{
     max-width: 100%;
     font-family: 'News', sans-serif;
-    color: #0c2b44;
+    color: #736c63;
 }
 /*makes the content less wide for improved readability and better styling
 Adds a transparent background for readability over the background image*/
@@ -27,7 +27,7 @@ main{
     max-width: 1500px;
     margin:0 auto;
     padding: 10px;
-    background: rgba(229, 244, 250, 0.85);
+    background: rgba(230,218,207, 0.85);
 }
 
 /*ensures footer is put last on the page by clearing any potential 
@@ -41,7 +41,7 @@ main::after, #skepp::after{
 /*header styling*/
 h1,h2,h3{
     font-family: 'Zen', sans-serif;
-    color: #0c2b44;
+    color: #736c63;
 }
 h1{ 
     margin-top: 25px;
@@ -68,7 +68,7 @@ p{
 
 /*navigation bar styling*/
 nav{
-    background: rgba(229, 244, 250, 0.7);
+    background: rgba(230,218,207, 0.85);
     list-style: none;
     margin:30px 0px;
     padding:0;
@@ -80,13 +80,13 @@ nav li{
 nav a{
     display: inline-block;
     padding: 20px 1.5rem;
-    color: #1E5359;
+    color: #736c63;
     font-size: 150%;
     font-weight: bold;
     text-decoration: none;
 }
 nav a:focus, nav a:hover, nav a:active{
-    background-color: #f5d2b0;
+    background-color: #588261;
 }
 
 /*split index, contact and memberInfo into columns*/

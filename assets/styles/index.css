@@ -7,10 +7,14 @@
     font-family: 'News';
     src: url(../fonts/NewsCycle-Regular.ttf);
 }
+@font-face {
+    font-family: 'Poiret';
+    src: url(../fonts/PoiretOne-Regular.ttf);
+}
 /*add background, and a color which makes the text readable even if the image can not be loaded*/
 html{
     font-size: 100%;
-    background:   #d6c09e;
+    background:   #586152;
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
@@ -18,15 +22,16 @@ html{
 body{
     max-width: 100%;
     font-family: 'News', sans-serif;
-    color: #736c63;
+    color: #5c5348;
 }
 /*makes the content less wide for improved readability and better styling
 Adds a transparent background for readability over the background image*/
 main{
-    width: 80%;
+    border-radius: 35px;
+    width: 70%;
     max-width: 1500px;
     margin:0 auto;
-    padding: 10px;
+    padding: 20px;
     background: rgba(230,218,207, 0.85);
 }
 
@@ -40,10 +45,11 @@ main::after, #skepp::after{
 
 /*header styling*/
 h1,h2,h3{
-    font-family: 'Zen', sans-serif;
+    font-family: 'Poiret', sans-serif;
     color: #736c63;
 }
 h1{ 
+    color: rgb(230,218,207);
     margin-top: 25px;
     margin-left: 20%;
     letter-spacing: 0.3rem;
@@ -55,6 +61,7 @@ h2{
     font-size: 2rem;
 }
 h3{
+    margin-bottom: -10px;
     letter-spacing: 0.15rem;
     font-size: 1.8rem;
 }
@@ -63,7 +70,7 @@ h3{
 p{
     font-size: 120%;
     line-height: 1.75rem;
-    padding: 10px;
+    padding: 5px;
 }
 
 /*navigation bar styling*/
@@ -78,15 +85,17 @@ nav li{
     display:inline;
 }
 nav a{
+    font-family: 'Poiret', sans-serif;
     display: inline-block;
-    padding: 20px 1.5rem;
+    padding: 20px 2.0rem;
     color: #736c63;
     font-size: 150%;
     font-weight: bold;
     text-decoration: none;
 }
 nav a:focus, nav a:hover, nav a:active{
-    background-color: #588261;
+    background-color: #a08654;
+    color: rgb(230,218,207);
 }
 
 /*split index, contact and memberInfo into columns*/
@@ -94,46 +103,25 @@ nav a:focus, nav a:hover, nav a:active{
     float: left;
     width: 48%;
 }
-#news, #boardInfo, #contactDetails{
+#contact, #boardInfo, #contactDetails{
     float: right;
     width: 48%;
 }
 
 /*floats images in text*/
-#info > img, #news > img, #history > figure, #badplats > figure, #skepp > img, #confirmImage, #englishImage, #guestImage{
+#info > img, #contact > img, #history > figure, #badplats > figure, #skepp > img, #confirmImage, #englishImage, #guestImage{
     float: right;
     margin: 5px;
 }
 
 /*downsizes images where necessary*/
-#info > img, #news > img{
+#info > img, #contact > img{
     max-width: 10rem;
     height: auto;
     margin: 5px;
 }
 
-/*styling for the contact page*/
-#contactDetails > p{
-    padding: 5px;
-    font-weight: bolder;
-}
-#contactForm{
-    border: #79a;
-    border-style: hidden dotted hidden hidden;
-}
-#contactForm  p{
-    margin: 5px;
-}
-input, #desc{
-    margin: 5px 5px 10px 5px;
-}
-input[type=Submit]{
-    margin: 10px;
-    padding: 12px;
-    font-weight: bolder;
-    color: #1E5359;
-    cursor: pointer;  
-}
+
 
 /*table of names in history and memberInfo*/
 #names th{
@@ -155,6 +143,8 @@ input[type=Submit]{
 
 /*footer styling*/
 footer{
+    font-family: 'Poiret', sans-serif;
+    color: rgb(230,218,207);
     width: 80%;
     margin:0 auto;
     text-shadow: 2px 2px 8px rgb(229, 244, 250);

@@ -18,6 +18,19 @@ html{
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
+
+/*Header styling*/
+header img{
+    height: 175px;
+    width: auto;
+
+}
+/*
+header h1{
+    position: relative;
+    top: 18px;
+    left: 10px;
+}
 /*text font and size*/
 body{
     max-width: 100%;
@@ -37,21 +50,21 @@ main{
 
 /*ensures footer is put last on the page by clearing any potential 
 floats after the main*/
-main::after, #skepp::after{
+main::after, #bsc-degree::after{
     content: "";
     clear: both;
     display: table;
 }
 
-/*header styling*/
+/*headers styling*/
 h1,h2,h3{
     font-family: 'Poiret', sans-serif;
     color: #736c63;
 }
 h1{ 
     color: rgb(230,218,207);
-    margin-top: 25px;
-    margin-left: 20%;
+    
+    margin-left: 15%;
     letter-spacing: 0.3rem;
     font-size: 4rem;
     text-shadow: 2px 2px 8px rgb(229, 244, 250);
@@ -109,13 +122,13 @@ nav a:focus, nav a:hover, nav a:active{
 }
 
 /*floats images in text*/
-#info > img, #contact > img, #history > figure, #badplats > figure, #skepp > img, #confirmImage, #englishImage, #guestImage{
+#info > img, #contact > img, #history > figure, #badplats > figure, #msc-degree > img, #bsc-degree > img{
     float: right;
     margin: 5px;
 }
 
 /*downsizes images where necessary*/
-#info > img, #contact > img{
+#info > img, #contact > img, #msc-degree > img{
     max-width: 10rem;
     height: auto;
     margin: 5px;

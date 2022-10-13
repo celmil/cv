@@ -172,7 +172,7 @@ footer{
     padding: 20px;
     margin-top: -50px;
     color: black;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
     font-weight: bold;
     font-size: 25px;
     border-radius: 0 5px 5px 0;
@@ -230,9 +230,13 @@ footer{
     width: 20%;
   }
   
-  /* Add a transparency effect for thumnbail images */
+  /* Add a transparency effect for thumnbail images and cut thumbnails to same size*/
   .demo {
     opacity: 0.6;
+    object-fit: cover;
+    width: auto;
+    height: 200px;
+
   }
   
   .active,

@@ -52,17 +52,19 @@ main::after, #bsc-degree::after{
 }
 
 /*headers styling*/
-h1,h2,h3{
+h1,h2,h3,h4{
     font-family: 'Poiret', sans-serif;
     color: #736c63;
 }
 h1{ 
     color: rgb(230,218,207);
-    
     margin-left: 15%;
     letter-spacing: 0.3rem;
     font-size: 4rem;
     text-shadow: 2px 2px 8px rgb(229, 244, 250);
+}
+h2,h3{
+    padding: 0px 5%;
 }
 h2{
     letter-spacing: 0.2rem;
@@ -78,12 +80,27 @@ h3{
 p{
     font-size: 120%;
     line-height: 1.75rem;
-    padding: 5px;
+    padding: 10px 5%;
+}
+
+/*Link styling in text*/
+p>a{
+  color: #284217;
+}
+
+p>a:focus, p>a:hover, p>a:active{
+  background-color: rgba(88, 97, 82, 0.8);
+  color: rgb(230,218,207);
+}
+
+/*Link styling in description of slideshow*/
+.descriptionText>p>a{
+  color: rgb(230,218,207);
 }
 
 /*navigation bar styling*/
 nav{
-    background: rgba(230,218,207, 0.85);
+    background: rgba(230,218,207, 0.5);
     list-style: none;
     margin:30px 0px;
     padding:0;
@@ -96,7 +113,7 @@ nav a{
     font-family: 'Poiret', sans-serif;
     display: inline-block;
     padding: 20px 2.0rem;
-    color: #736c63;
+    color: rgb(230,218,207);
     font-size: 150%;
     font-weight: bold;
     text-decoration: none;
@@ -106,12 +123,12 @@ nav a:focus, nav a:hover, nav a:active{
     color: rgb(230,218,207);
 }
 
-/*split index, contact and memberInfo into columns*/
-#info{
+/*split index and about page in columns*/
+#info, #whois{
     float: left;
     width: 48%;
 }
-#contact{
+#contact, #previouswork{
     float: right;
     width: 48%;
 }
@@ -186,7 +203,7 @@ footer{
     border-radius: 3px 0 0 3px;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
+  /* On hover, add a dark transparent background color */
   .prev:hover,
   .next:hover {
     background-color: rgba(88, 97, 82, 0.8);
@@ -236,7 +253,7 @@ footer{
     object-fit: cover;
     width: auto;
     height: 200px;
-
+    padding-bottom: 20px;
   }
   
   .active,

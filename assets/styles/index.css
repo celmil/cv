@@ -19,12 +19,6 @@ html{
     background-size: 100% auto;
 }
 
-/*Header styling*/
-header img{
-    height: 175px;
-    width: auto;
-}
-
 /*text font and size*/
 body{
     max-width: 100%;
@@ -38,7 +32,7 @@ main{
     border-radius: 35px;
     width: 70%;
     max-width: 1500px;
-    margin:0 auto;
+    margin: 0px auto;
     padding: 20px;
     background: rgba(230,218,207, 0.85);
 }
@@ -80,28 +74,45 @@ h3{
 
 /*navigation bar styling*/
 nav{
-  background: rgba(230,218,207, 0.5);
+  background: rgba(0, 0, 0, 0);
   list-style: none;
-  margin:30px 0px;
+  margin: -16px auto;
+  width: 70%;
   padding:0;
-  text-align: center;
+  text-align: left;
 }
 nav li{
   display:inline;
 }
+
+
 nav a{
+  border-radius: 35px 35px 0px 0px;
   font-family: 'Poiret', sans-serif;
   display: inline-block;
   padding: 20px 2.0rem;
   color: rgb(230,218,207);
+  background-color: rgba(146, 138, 129, 0.85);
   font-size: 150%;
   font-weight: bold;
   text-decoration: none;
 }
-nav a:focus, nav a:hover, nav a:active{
+/*styles buttons for hover and the current site*/
+nav a:focus {
+  background-color: rgba(230,218,207, 0.85);
+  color: #5c5348;
+} 
+
+nav a.active {
+  background-color: rgba(230,218,207, 0.85);
+  color: #5c5348;
+}
+
+nav a:hover{
   background-color: #a08654;
   color: rgb(230,218,207);
 }
+
 
 /*text styling*/
 p{
@@ -127,7 +138,7 @@ p>a:focus, p>a:hover, p>a:active{
 
 
 
-/*split index and about page in columns*/
+/*split text in columns*/
 #info, #whois{
     float: left;
     width: 48%;
@@ -153,6 +164,7 @@ p>a:focus, p>a:hover, p>a:active{
 /*styling for list of student chapter*/
 .studentChapter > ul{
   font-size: 120%;
+  padding: 0px 50px;
   list-style-position: inside;
 }
 

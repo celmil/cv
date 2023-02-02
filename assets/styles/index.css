@@ -14,27 +14,29 @@
 /*add background*/
 html{
     font-size: 100%;
-    background:   #586152;
+    background-image: url("../images/background-clouds-transparent2.png");
+    background-color: #d4d6d5;
+    height: 500px;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
+    position: relative;
 }
 
 /*text font and size*/
 body{
     max-width: 100%;
     font-family: 'News', sans-serif;
-    color: #5c5348;
+    color: #3a4249;
 }
 
-/*makes the content less wide for improved readability and better styling
-Adds a transparent background for readability over the background image*/
+/*makes the content less wide for improved readability and better styling*/
 main{
     border-radius: 35px;
     width: 70%;
     max-width: 1500px;
     margin: 0px auto;
     padding: 20px;
-    background: rgba(241, 235, 230, 0.85);
 }
 
 
@@ -50,36 +52,33 @@ main::after, #bsc-degree::after{
 /*headers styling*/
 h1,h2,h3,h4{
     font-family: 'Poiret', sans-serif;
-    color: #736c63;
+    color: #2b3741;
 }
 h1{ 
-    color: rgb(230,218,207);
-    margin-left: 15%;
-    letter-spacing: 0.3rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
     font-size: 4rem;
-    text-shadow: 2px 2px 8px rgb(229, 244, 250);
 }
 h2,h3{
     padding: 0px 5%;
 }
 h2{
     letter-spacing: 0.2rem;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 h3{
     margin-bottom: -10px;
     letter-spacing: 0.15rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 /*navigation bar styling*/
 nav{
   background: rgba(0, 0, 0, 0);
   list-style: none;
-  margin: -16px auto;
-  width: 70%;
-  padding:0;
-  text-align: left;
+  margin: auto;
+  padding: 0px;
+  text-align: center;
 }
 nav li{
   display:inline;
@@ -87,30 +86,22 @@ nav li{
 
 
 nav a{
-  border-radius: 35px 35px 0px 0px;
+  border-radius: 50%;
   font-family: 'Poiret', sans-serif;
   display: inline-block;
   padding: 20px 2.0rem;
-  color: rgb(230,218,207);
-  background-color: rgba(146, 138, 129, 0.85);
+  margin: 0px 50px;
+  color: #3a4249;
   font-size: 150%;
   font-weight: bold;
   text-decoration: none;
 }
 /*styles buttons for hover and the current site*/
-nav a:focus {
-  background-color: rgba(230,218,207, 0.85);
-  color: #5c5348;
-} 
-
-nav a.active {
-  background-color: rgba(230,218,207, 0.85);
-  color: #5c5348;
-}
 
 nav a:hover{
-  background-color: #a08654;
-  color: rgb(230,218,207);
+
+  background-color: #747e86;
+  color: rgb(167, 181, 187);
 }
 
 
@@ -123,17 +114,17 @@ p{
 
 /*Link styling in text*/
 p>a{
-  color: #284217;
+  color: #252e35;
 }
 
 p>a:focus, p>a:hover, p>a:active{
-  background-color: rgba(88, 97, 82, 0.8);
-  color: rgb(230,218,207);
+  text-shadow: 1px 1px 2px lightslategray;
+  color: #252e35;
 }
 
 /*Link styling in description of slideshow*/
 .descriptionText>p>a{
-  color: rgb(230,218,207);
+  color: rgb(207, 216, 230);
 }
 
 
@@ -148,19 +139,7 @@ p>a:focus, p>a:hover, p>a:active{
     width: 48%;
 }
 
-/*floats images in text
-#info > img, #contact > img, #msc-degree > img, #bsc-degree > img{
-    float: right;
-    margin: 5px;
-}
-*/
-/*downsizes images where necessary
-#info > img, #contact > img, #msc-degree > img{
-    max-width: 10rem;
-    height: auto;
-    margin: 5px;
-}
-*/
+
 /*styling for list of student chapter*/
 .studentChapter > ul{
   font-size: 120%;
@@ -171,10 +150,9 @@ p>a:focus, p>a:hover, p>a:active{
 /*footer styling*/
 footer{
     font-family: 'Poiret', sans-serif;
-    color: rgb(230,218,207);
     width: 80%;
     margin:0 auto;
-    text-shadow: 2px 2px 8px rgb(229, 244, 250);
+    text-shadow: 2px 2px 8px rgb(146, 163, 170);
 }
 
 /*Portfolio slideshow styling*/
@@ -232,7 +210,7 @@ footer{
   /* On hover, add a dark transparent background color */
   .prev:hover,
   .next:hover {
-    background-color: rgba(88, 97, 82, 0.8);
+    background-color: rgba(97, 87, 82, 0.8);
   }
   
   /* Number text*/
@@ -247,9 +225,8 @@ footer{
 
   .descriptionText {
     text-align: center;
-    background-color: #586152;
+    background-color: #98a4ad;
     padding: 20px 20px;
-    color: white;
   }
 
 
@@ -287,7 +264,7 @@ footer{
       width: 90%;
     }
     p{
-      font-size: 150%;
+      font-size: 125%;
     }
   }
   /*Styling for phones smaller than 500px in width*/

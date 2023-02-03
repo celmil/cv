@@ -95,6 +95,7 @@ nav a{
   font-size: 150%;
   font-weight: bold;
   text-decoration: none;
+  transition-duration: 0.4s;
 }
 /*styles buttons for hover and the current site*/
 
@@ -199,6 +200,7 @@ footer{
     border-radius: 0 5px 5px 0;
     user-select: none;
     -webkit-user-select: none;
+    transition-duration: 0.4s;
   }
   
   /* Position the "next button" to the right */
@@ -244,16 +246,17 @@ footer{
   
   /* Add a transparency effect for thumnbail images and cut thumbnails to same size*/
   .demo {
-    opacity: 0.6;
+    opacity: 1;
     object-fit: cover;
     width: 100%;
     height: 200px;
     padding-bottom: 20px;
+    transition-duration: 0.4s;
   }
   
   .active,
   .demo:hover {
-    opacity: 1;
+    opacity: 0.25;
   }
   /*Styling for tablets and phones smaller than 1400px in width*/
   @media (max-width: 1400px) {

@@ -100,7 +100,6 @@ nav a{
 /*styles buttons for hover and the current site*/
 
 nav a:hover{
-
   background-color: #747e86;
   color: rgb(167, 181, 187);
 }

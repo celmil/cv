@@ -100,7 +100,6 @@ nav a{
 /*styles buttons for hover and the current site*/
 
 nav a:hover{
-  background-color: #747e86;
   color: rgb(167, 181, 187);
 }
 
@@ -115,6 +114,7 @@ p{
 /*Link styling in text*/
 p>a{
   color: #252e35;
+  transition-duration: 0.4s;
 }
 
 p>a:focus, p>a:hover, p>a:active{
@@ -240,7 +240,7 @@ footer{
   /* six columns*/
   .column {
     float: left;
-    width: 16.66%;
+    width: 14.28%;
   }
   
   /* Add a transparency effect for thumnbail images and cut thumbnails to same size*/

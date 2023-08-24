@@ -72,6 +72,14 @@ h3{
     font-size: 1.5rem;
 }
 
+/*list styling*/
+ul{
+  font-size: 125%;
+  list-style-type: circle;
+  margin: 20px 40px;
+}
+
+
 /*navigation bar styling*/
 nav{
   background: rgba(0, 0, 0, 0);
@@ -106,7 +114,7 @@ nav a:hover{
 
 /*text styling*/
 p{
-    font-size: 120%;
+    font-size: 125%;
     line-height: 1.75rem;
     padding: 0px 5%;
 }
@@ -124,7 +132,7 @@ p>a:focus, p>a:hover, p>a:active{
 
 /*Link styling in description of slideshow*/
 .descriptionText>p>a{
-  color: rgb(207, 216, 230);
+  color: rgb(69, 89, 121);
 }
 
 
@@ -225,8 +233,8 @@ footer{
   }
 
   .descriptionText {
-    text-align: center;
-    background-color: #98a4ad;
+    
+    background-color: #bdc0c2;
     padding: 20px 20px;
   }
 

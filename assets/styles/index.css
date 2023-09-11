@@ -140,11 +140,11 @@ p>a:focus, p>a:hover, p>a:active{
 /*split text in columns*/
 #info, #whois{
     float: left;
-    width: 48%;
+    width: 63%;
 }
 #contact, #previouswork{
     float: right;
-    width: 48%;
+    width: 33%;
 }
 
 
